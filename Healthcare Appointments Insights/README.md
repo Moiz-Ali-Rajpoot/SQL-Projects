@@ -330,28 +330,6 @@ SET app_start_time = STR_TO_DATE(@start, '%h:%i:%s %p'),
 | **New service categories** | Update `reason_category` references |
 | **Pediatric age thresholds** | Modify `TIMESTAMPDIFF()` comparisons |
 
-### Adding New Queries
-
-Template structure to maintain consistency:
-```sql
--- ============================================================
--- QUERY [N]: [Descriptive Name]
--- Question: [Clear business question]
--- Use Case: [Who will use this and why]
--- Advanced: [Technical technique highlighted]
--- ============================================================
-
-SELECT 
-    -- Dimensions
-    -- Metrics  
-    -- Calculated fields
-    -- Classification/CASE statements
-FROM appointments
-WHERE [appropriate filters]
-GROUP BY [dimensions]
-ORDER BY [priority metric];
-```
-
 ---
 
 ## 📊 Expected Query Performance
@@ -393,43 +371,3 @@ ORDER BY [priority metric];
 - Healthcare revenue cycle management
 
 ---
-
-## 🤝 Contributing
-
-To add queries or improvements:
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-query`)
-3. Follow query commenting standards (Question/Use Case/Advanced)
-4. Add to appropriate category section
-5. Update this README with query documentation
-6. Submit pull request
-
----
-
-## 📄 License
-
-This project is released under the MIT License. Free to use, modify, and distribute with attribution.
-
----
-
-## 👤 Author
-
-**[Your Name]**  
-Healthcare Data Analyst | SQL Developer  
-📧 your.email@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourportfolio.com)
-
----
-
-## 🙏 Acknowledgments
-
-- Query optimization patterns inspired by healthcare data warehousing best practices
-- Risk scoring algorithms adapted from patient engagement literature
-- Window function techniques from MySQL 8.0 documentation
-
----
-
-**Last Updated**: March 2026  
-**Version**: 1.0  
-**Status**: Production Ready ✅
