@@ -1,4 +1,4 @@
--- SQL Scheme Creation
+-- SQL Schema Creation
 
 -- ============================================================
 -- APPOINTMENTS ANALYTICS DATABASE SCHEMA
